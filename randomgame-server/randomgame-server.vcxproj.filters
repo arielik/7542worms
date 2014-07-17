@@ -1,0 +1,489 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Archivos de código fuente">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Archivos de encabezado">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Archivos de recursos">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Archivos de código fuente\server">
+      <UniqueIdentifier>{722c7938-68ba-4bad-a1e4-974ac3fcebd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de código fuente\server\model">
+      <UniqueIdentifier>{78a5bcab-5000-4148-992a-62adac898c23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de código fuente\server\model\physics">
+      <UniqueIdentifier>{abd26474-d4f0-4749-bd4e-89ecf6c6451d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de código fuente\server\model\physics\Bodies">
+      <UniqueIdentifier>{9b2302c6-21ef-413c-a2cd-de6c11a57865}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de código fuente\server\model\physics\Bodies\Worm">
+      <UniqueIdentifier>{f8aac352-cc76-4c5f-adea-afdfd0d3431c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de código fuente\server\model\Exceptions">
+      <UniqueIdentifier>{cf2aaa29-8939-44de-bec9-319fdfbdde7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de código fuente\server\model\HandlerBmp">
+      <UniqueIdentifier>{552e85df-e81c-4caf-9e6f-cf1dedf4d182}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de código fuente\server\model\Entities">
+      <UniqueIdentifier>{6e49a3a5-3ed2-4f93-9b16-acad7f92dec9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de código fuente\utils">
+      <UniqueIdentifier>{86be1b3d-d3f6-4f31-b1f1-37f5841e581a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de código fuente\utils\Constantes">
+      <UniqueIdentifier>{fc839ba3-703b-46ce-9a7b-8d362e56967f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de código fuente\utils\Log">
+      <UniqueIdentifier>{c8432327-23cc-4656-a501-f6491c16e9c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de código fuente\utils\Network">
+      <UniqueIdentifier>{d4da2a89-1652-4343-9233-9503054321b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de código fuente\server\model\physics\Bodies\Missiles">
+      <UniqueIdentifier>{ae24a2ac-545d-4c84-89b6-df5d3111769a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\Servidor\modelo\b2Separator.cpp">
+      <Filter>Archivos de código fuente\server\model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Servidor\modelo\GamePlayer.cpp">
+      <Filter>Archivos de código fuente\server\model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Servidor\modelo\HandleContour.cpp">
+      <Filter>Archivos de código fuente\server\model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Servidor\modelo\TerrainProcessor.cpp">
+      <Filter>Archivos de código fuente\server\model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Servidor\modelo\GameElement.cpp">
+      <Filter>Archivos de código fuente\server\model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Servidor\modelo\GameEngine.cpp">
+      <Filter>Archivos de código fuente\server\model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Servidor\modelo\GameLevel.cpp">
+      <Filter>Archivos de código fuente\server\model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Servidor\modelo\GameLoop.cpp">
+      <Filter>Archivos de código fuente\server\model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Servidor\modelo\Physics\Body.cpp">
+      <Filter>Archivos de código fuente\server\model\physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Servidor\modelo\Physics\ContactListener.cpp">
+      <Filter>Archivos de código fuente\server\model\physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Servidor\modelo\Physics\Bodies\Circle.cpp">
+      <Filter>Archivos de código fuente\server\model\physics\Bodies</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Servidor\modelo\Physics\Bodies\Hexagon.cpp">
+      <Filter>Archivos de código fuente\server\model\physics\Bodies</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Servidor\modelo\Physics\Bodies\Pentagon.cpp">
+      <Filter>Archivos de código fuente\server\model\physics\Bodies</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Servidor\modelo\Physics\Bodies\Water.cpp">
+      <Filter>Archivos de código fuente\server\model\physics\Bodies</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Servidor\modelo\Physics\Bodies\Cuadrado.cpp">
+      <Filter>Archivos de código fuente\server\model\physics\Bodies</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Servidor\modelo\Physics\Bodies\Triangulo.cpp">
+      <Filter>Archivos de código fuente\server\model\physics\Bodies</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Servidor\modelo\Physics\Bodies\Worm\Worm2d.cpp">
+      <Filter>Archivos de código fuente\server\model\physics\Bodies\Worm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Servidor\modelo\Physics\Bodies\Worm\WormActions.cpp">
+      <Filter>Archivos de código fuente\server\model\physics\Bodies\Worm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Servidor\modelo\Exceptions\ContourException.cpp">
+      <Filter>Archivos de código fuente\server\model\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Servidor\modelo\Exceptions\PlayerException.cpp">
+      <Filter>Archivos de código fuente\server\model\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Servidor\modelo\HandlerBmp\TerrainImg.cpp">
+      <Filter>Archivos de código fuente\server\model\HandlerBmp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Servidor\modelo\HandlerBmp\ColorBlack.cpp">
+      <Filter>Archivos de código fuente\server\model\HandlerBmp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Servidor\modelo\HandlerBmp\ColorBmp.cpp">
+      <Filter>Archivos de código fuente\server\model\HandlerBmp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Servidor\modelo\HandlerBmp\ColorRgb.cpp">
+      <Filter>Archivos de código fuente\server\model\HandlerBmp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Servidor\modelo\HandlerBmp\ColorWhite.cpp">
+      <Filter>Archivos de código fuente\server\model\HandlerBmp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Servidor\modelo\HandlerBmp\ContourBmp.cpp">
+      <Filter>Archivos de código fuente\server\model\HandlerBmp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Servidor\modelo\HandlerBmp\DataBmp.cpp">
+      <Filter>Archivos de código fuente\server\model\HandlerBmp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Servidor\modelo\HandlerBmp\DataBmp24.cpp">
+      <Filter>Archivos de código fuente\server\model\HandlerBmp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Servidor\modelo\HandlerBmp\DataBmp32.cpp">
+      <Filter>Archivos de código fuente\server\model\HandlerBmp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Servidor\modelo\HandlerBmp\DataImgSdl.cpp">
+      <Filter>Archivos de código fuente\server\model\HandlerBmp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Servidor\modelo\HandlerBmp\PixelBmp.cpp">
+      <Filter>Archivos de código fuente\server\model\HandlerBmp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Servidor\modelo\HandlerBmp\Position.cpp">
+      <Filter>Archivos de código fuente\server\model\HandlerBmp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Servidor\modelo\Entities\Worm.cpp">
+      <Filter>Archivos de código fuente\server\model\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\utils\Log.cpp">
+      <Filter>Archivos de código fuente\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\utils\ParserYaml.cpp">
+      <Filter>Archivos de código fuente\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\utils\PersistYaml.cpp">
+      <Filter>Archivos de código fuente\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\utils\Util.cpp">
+      <Filter>Archivos de código fuente\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\utils\Network\Condition.cpp">
+      <Filter>Archivos de código fuente\utils\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\utils\Network\Mutex.cpp">
+      <Filter>Archivos de código fuente\utils\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Servidor\Servidor.cpp">
+      <Filter>Archivos de código fuente\utils\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\utils\Network\Socket.cpp">
+      <Filter>Archivos de código fuente\utils\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\utils\Network\Thread.cpp">
+      <Filter>Archivos de código fuente\utils\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\main-server.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Servidor\modelo\GamePosition.cpp">
+      <Filter>Archivos de código fuente\server\model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Servidor\Servidor.cpp">
+      <Filter>Archivos de código fuente\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Servidor\modelo\TurnManager.cpp">
+      <Filter>Archivos de código fuente\server\model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\utils\Timer.cpp">
+      <Filter>Archivos de código fuente\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Servidor\modelo\Entities\Missile.cpp">
+      <Filter>Archivos de código fuente\server\model\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Servidor\modelo\Entities\MissileBazooka.cpp">
+      <Filter>Archivos de código fuente\server\model\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Servidor\modelo\Entities\MissileFactory.cpp">
+      <Filter>Archivos de código fuente\server\model\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Servidor\modelo\Entities\MissileGrenade.cpp">
+      <Filter>Archivos de código fuente\server\model\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Servidor\modelo\Physics\Bodies\Missiles\Missile2d.cpp">
+      <Filter>Archivos de código fuente\server\model\physics\Bodies\Missiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Servidor\modelo\Physics\Bodies\Missiles\Missile2dBazooka.cpp">
+      <Filter>Archivos de código fuente\server\model\physics\Bodies\Missiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Servidor\modelo\Physics\Bodies\Missiles\Missile2dFactory.cpp">
+      <Filter>Archivos de código fuente\server\model\physics\Bodies\Missiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Servidor\modelo\Physics\Bodies\Missiles\Missile2dGrenade.cpp">
+      <Filter>Archivos de código fuente\server\model\physics\Bodies\Missiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Servidor\modelo\Entities\MissileBurro.cpp">
+      <Filter>Archivos de código fuente\server\model\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Servidor\modelo\Entities\MissileDynamite.cpp">
+      <Filter>Archivos de código fuente\server\model\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Servidor\modelo\Entities\MissileHoly.cpp">
+      <Filter>Archivos de código fuente\server\model\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Servidor\modelo\Entities\MissileHoming.cpp">
+      <Filter>Archivos de código fuente\server\model\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Servidor\modelo\Entities\MissileSheep.cpp">
+      <Filter>Archivos de código fuente\server\model\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Servidor\modelo\Entities\MissileSuicide.cpp">
+      <Filter>Archivos de código fuente\server\model\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Servidor\modelo\Entities\MissileAirStrike.cpp">
+      <Filter>Archivos de código fuente\server\model\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Servidor\modelo\Entities\MissileBanana.cpp">
+      <Filter>Archivos de código fuente\server\model\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Servidor\modelo\Physics\Bodies\Missiles\MissileBanana2d.cpp">
+      <Filter>Archivos de código fuente\server\model\physics\Bodies\Missiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Servidor\modelo\Physics\Bodies\Missiles\MissileBurro2d.cpp">
+      <Filter>Archivos de código fuente\server\model\physics\Bodies\Missiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Servidor\modelo\Physics\Bodies\Missiles\MissileDynamite2d.cpp">
+      <Filter>Archivos de código fuente\server\model\physics\Bodies\Missiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Servidor\modelo\Physics\Bodies\Missiles\MissileHoly2d.cpp">
+      <Filter>Archivos de código fuente\server\model\physics\Bodies\Missiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Servidor\modelo\Physics\Bodies\Missiles\MissileHoming2d.cpp">
+      <Filter>Archivos de código fuente\server\model\physics\Bodies\Missiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Servidor\modelo\Physics\Bodies\Missiles\MissileSheep2d.cpp">
+      <Filter>Archivos de código fuente\server\model\physics\Bodies\Missiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Servidor\modelo\Physics\Bodies\Missiles\MissileAirStrike2d.cpp">
+      <Filter>Archivos de código fuente\server\model\physics\Bodies\Missiles</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\Servidor\modelo\b2Separator.h">
+      <Filter>Archivos de código fuente\server\model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Servidor\modelo\GamePlayer.h">
+      <Filter>Archivos de código fuente\server\model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Servidor\modelo\HandleContour.h">
+      <Filter>Archivos de código fuente\server\model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Servidor\modelo\TerrainProcessor.h">
+      <Filter>Archivos de código fuente\server\model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Servidor\modelo\GameElement.h">
+      <Filter>Archivos de código fuente\server\model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Servidor\modelo\GameEngine.h">
+      <Filter>Archivos de código fuente\server\model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Servidor\modelo\GameLevel.h">
+      <Filter>Archivos de código fuente\server\model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Servidor\modelo\GameLoop.h">
+      <Filter>Archivos de código fuente\server\model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Servidor\modelo\Physics\Body.h">
+      <Filter>Archivos de código fuente\server\model\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Servidor\modelo\Physics\ContactListener.h">
+      <Filter>Archivos de código fuente\server\model\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Servidor\modelo\Physics\Bodies\Circle.h">
+      <Filter>Archivos de código fuente\server\model\physics\Bodies</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Servidor\modelo\Physics\Bodies\Hexagon.h">
+      <Filter>Archivos de código fuente\server\model\physics\Bodies</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Servidor\modelo\Physics\Bodies\Pentagon.h">
+      <Filter>Archivos de código fuente\server\model\physics\Bodies</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Servidor\modelo\Physics\Bodies\Water.h">
+      <Filter>Archivos de código fuente\server\model\physics\Bodies</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Servidor\modelo\Physics\Bodies\Cuadrado.h">
+      <Filter>Archivos de código fuente\server\model\physics\Bodies</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Servidor\modelo\Physics\Bodies\Triangulo.h">
+      <Filter>Archivos de código fuente\server\model\physics\Bodies</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Servidor\modelo\Physics\Bodies\Worm\Worm2d.h">
+      <Filter>Archivos de código fuente\server\model\physics\Bodies\Worm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Servidor\modelo\Physics\Bodies\Worm\WormActions.h">
+      <Filter>Archivos de código fuente\server\model\physics\Bodies\Worm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Servidor\modelo\Exceptions\ContourException.h">
+      <Filter>Archivos de código fuente\server\model\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Servidor\modelo\Exceptions\PlayerException.h">
+      <Filter>Archivos de código fuente\server\model\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Servidor\modelo\HandlerBmp\TerrainImg.h">
+      <Filter>Archivos de código fuente\server\model\HandlerBmp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Servidor\modelo\HandlerBmp\ColorBlack.h">
+      <Filter>Archivos de código fuente\server\model\HandlerBmp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Servidor\modelo\HandlerBmp\ColorBmp.h">
+      <Filter>Archivos de código fuente\server\model\HandlerBmp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Servidor\modelo\HandlerBmp\ColorRgb.h">
+      <Filter>Archivos de código fuente\server\model\HandlerBmp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Servidor\modelo\HandlerBmp\ColorWhite.h">
+      <Filter>Archivos de código fuente\server\model\HandlerBmp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Servidor\modelo\HandlerBmp\ContourBmp.h">
+      <Filter>Archivos de código fuente\server\model\HandlerBmp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Servidor\modelo\HandlerBmp\DataBmp.h">
+      <Filter>Archivos de código fuente\server\model\HandlerBmp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Servidor\modelo\HandlerBmp\DataBmp24.h">
+      <Filter>Archivos de código fuente\server\model\HandlerBmp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Servidor\modelo\HandlerBmp\DataBmp32.h">
+      <Filter>Archivos de código fuente\server\model\HandlerBmp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Servidor\modelo\HandlerBmp\DataImgSdl.h">
+      <Filter>Archivos de código fuente\server\model\HandlerBmp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Servidor\modelo\HandlerBmp\PixelBmp.h">
+      <Filter>Archivos de código fuente\server\model\HandlerBmp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Servidor\modelo\HandlerBmp\Position.h">
+      <Filter>Archivos de código fuente\server\model\HandlerBmp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Servidor\modelo\Entities\Worm.h">
+      <Filter>Archivos de código fuente\server\model\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\utils\Log.h">
+      <Filter>Archivos de código fuente\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\utils\ParserYaml.h">
+      <Filter>Archivos de código fuente\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\utils\PersistYaml.h">
+      <Filter>Archivos de código fuente\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\utils\Util.h">
+      <Filter>Archivos de código fuente\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\utils\Constantes\Constantes.h">
+      <Filter>Archivos de código fuente\utils\Constantes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\utils\Network\Condition.h">
+      <Filter>Archivos de código fuente\utils\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\utils\Network\Messages.h">
+      <Filter>Archivos de código fuente\utils\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\utils\Network\Mutex.h">
+      <Filter>Archivos de código fuente\utils\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Servidor\Servidor.h">
+      <Filter>Archivos de código fuente\utils\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\utils\Network\Socket.h">
+      <Filter>Archivos de código fuente\utils\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\utils\Network\Thread.h">
+      <Filter>Archivos de código fuente\utils\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Servidor\modelo\GamePosition.h">
+      <Filter>Archivos de código fuente\server\model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Servidor\Servidor.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Servidor\Servidor.h">
+      <Filter>Archivos de código fuente\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Servidor\modelo\TurnManager.h">
+      <Filter>Archivos de código fuente\server\model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\utils\Timer.h">
+      <Filter>Archivos de código fuente\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Servidor\modelo\Entities\Missile.h">
+      <Filter>Archivos de código fuente\server\model\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Servidor\modelo\Entities\MissileBazooka.h">
+      <Filter>Archivos de código fuente\server\model\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Servidor\modelo\Entities\MissileFactory.h">
+      <Filter>Archivos de código fuente\server\model\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Servidor\modelo\Entities\MissileGrenade.h">
+      <Filter>Archivos de código fuente\server\model\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Servidor\modelo\Physics\Bodies\Missiles\Missile2d.h">
+      <Filter>Archivos de código fuente\server\model\physics\Bodies\Missiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Servidor\modelo\Physics\Bodies\Missiles\Missile2dBazooka.h">
+      <Filter>Archivos de código fuente\server\model\physics\Bodies\Missiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Servidor\modelo\Physics\Bodies\Missiles\Missile2dFactory.h">
+      <Filter>Archivos de código fuente\server\model\physics\Bodies\Missiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Servidor\modelo\Physics\Bodies\Missiles\Missile2dGrenade.h">
+      <Filter>Archivos de código fuente\server\model\physics\Bodies\Missiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Servidor\modelo\Entities\MissileBurro.h">
+      <Filter>Archivos de código fuente\server\model\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Servidor\modelo\Entities\MissileDynamite.h">
+      <Filter>Archivos de código fuente\server\model\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Servidor\modelo\Entities\MissileHoly.h">
+      <Filter>Archivos de código fuente\server\model\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Servidor\modelo\Entities\MissileHoming.h">
+      <Filter>Archivos de código fuente\server\model\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Servidor\modelo\Entities\MissileSheep.h">
+      <Filter>Archivos de código fuente\server\model\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Servidor\modelo\Entities\MissileSuicide.h">
+      <Filter>Archivos de código fuente\server\model\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Servidor\modelo\Entities\MissileAirStrike.h">
+      <Filter>Archivos de código fuente\server\model\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Servidor\modelo\Entities\MissileBanana.h">
+      <Filter>Archivos de código fuente\server\model\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Servidor\modelo\Physics\Bodies\Missiles\MissileBanana2d.h">
+      <Filter>Archivos de código fuente\server\model\physics\Bodies\Missiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Servidor\modelo\Physics\Bodies\Missiles\MissileBurro2d.h">
+      <Filter>Archivos de código fuente\server\model\physics\Bodies\Missiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Servidor\modelo\Physics\Bodies\Missiles\MissileDynamite2d.h">
+      <Filter>Archivos de código fuente\server\model\physics\Bodies\Missiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Servidor\modelo\Physics\Bodies\Missiles\MissileHoly2d.h">
+      <Filter>Archivos de código fuente\server\model\physics\Bodies\Missiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Servidor\modelo\Physics\Bodies\Missiles\MissileHoming2d.h">
+      <Filter>Archivos de código fuente\server\model\physics\Bodies\Missiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Servidor\modelo\Physics\Bodies\Missiles\MissileSheep2d.h">
+      <Filter>Archivos de código fuente\server\model\physics\Bodies\Missiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Servidor\modelo\Physics\Bodies\Missiles\MissileAirStrike2d.h">
+      <Filter>Archivos de código fuente\server\model\physics\Bodies\Missiles</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="configFile.props" />
+  </ItemGroup>
+</Project>

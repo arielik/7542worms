@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{674F38C1-1A7A-49DC-ACE1-E027367FECE0}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>randomgameserver</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\random-fiuba-game\randomgame\src\utils\Network;C:\random-fiuba-game\randomgame\libs\SDL2_gfx\include;C:\random-fiuba-game\randomgame\libs\;C:\random-fiuba-game\randomgame\libs\Box2D\;C:\random-fiuba-game\randomgame\libs\yaml-cpp\include\yaml-cpp\contrib;C:\random-fiuba-game\randomgame\libs\yaml-cpp\include\yaml-cpp;C:\random-fiuba-game\randomgame\libs\yaml-cpp\include;C:\random-fiuba-game\randomgame\libs\SDL2-2.0.0\include;C:\random-fiuba-game\randomgame\libs\SDL2_ttf-2.0.12\include;C:\random-fiuba-game\randomgame\libs\SDL2_mixer-2.0.0\include;C:\random-fiuba-game\randomgame\libs\SDL2_image-2.0.0\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\random-fiuba-game\randomgame\libs\SDL2_gfx\lib;C:\random-fiuba-game\randomgame\libs\Box2D;C:\random-fiuba-game\randomgame\libs\yaml-cpp\build\Debug;C:\random-fiuba-game\randomgame\libs\yaml-cpp\build;C:\random-fiuba-game\randomgame\libs\SDL2-2.0.0\lib\x86;C:\random-fiuba-game\randomgame\libs\SDL2_ttf-2.0.12\lib\x86;C:\random-fiuba-game\randomgame\libs\SDL2_mixer-2.0.0\lib\x86;C:\random-fiuba-game\randomgame\libs\SDL2_image-2.0.0\lib\x86;$(LibraryPath)</LibraryPath>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\random-fiuba-game\randomgame\src\utils\Network;C:\random-fiuba-game\randomgame\libs\SDL2_gfx\include;C:\random-fiuba-game\randomgame\libs\;C:\random-fiuba-game\randomgame\libs\Box2D\;C:\random-fiuba-game\randomgame\libs\yaml-cpp\include\yaml-cpp\contrib;C:\random-fiuba-game\randomgame\libs\yaml-cpp\include\yaml-cpp;C:\random-fiuba-game\randomgame\libs\yaml-cpp\include;C:\random-fiuba-game\randomgame\libs\SDL2-2.0.0\include;C:\random-fiuba-game\randomgame\libs\SDL2_ttf-2.0.12\include;C:\random-fiuba-game\randomgame\libs\SDL2_mixer-2.0.0\include;C:\random-fiuba-game\randomgame\libs\SDL2_image-2.0.0\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\random-fiuba-game\randomgame\libs\release;C:\random-fiuba-game\randomgame\libs\SDL2_gfx\lib;C:\random-fiuba-game\randomgame\libs\SDL2-2.0.0\lib\x86;C:\random-fiuba-game\randomgame\libs\SDL2_ttf-2.0.12\lib\x86;C:\random-fiuba-game\randomgame\libs\SDL2_mixer-2.0.0\lib\x86;C:\random-fiuba-game\randomgame\libs\SDL2_image-2.0.0\lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_mixer.lib;SDL2_ttf.lib;Box2D.lib;libyaml-cppmdd.lib;SDL2_gfx.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AllowIsolation>false</AllowIsolation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_mixer.lib;SDL2_ttf.lib;Box2D.lib;libyaml-cppmd.lib;SDL2_gfx.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\main-server.cpp" />
+    <ClCompile Include="..\src\Servidor\modelo\b2Separator.cpp" />
+    <ClCompile Include="..\src\Servidor\modelo\Entities\Missile.cpp" />
+    <ClCompile Include="..\src\Servidor\modelo\Entities\MissileAirStrike.cpp" />
+    <ClCompile Include="..\src\Servidor\modelo\Entities\MissileBanana.cpp" />
+    <ClCompile Include="..\src\Servidor\modelo\Entities\MissileBazooka.cpp" />
+    <ClCompile Include="..\src\Servidor\modelo\Entities\MissileBurro.cpp" />
+    <ClCompile Include="..\src\Servidor\modelo\Entities\MissileDynamite.cpp" />
+    <ClCompile Include="..\src\Servidor\modelo\Entities\MissileFactory.cpp" />
+    <ClCompile Include="..\src\Servidor\modelo\Entities\MissileGrenade.cpp" />
+    <ClCompile Include="..\src\Servidor\modelo\Entities\MissileHoly.cpp" />
+    <ClCompile Include="..\src\Servidor\modelo\Entities\MissileHoming.cpp" />
+    <ClCompile Include="..\src\Servidor\modelo\Entities\MissileSheep.cpp" />
+    <ClCompile Include="..\src\Servidor\modelo\Entities\MissileSuicide.cpp" />
+    <ClCompile Include="..\src\Servidor\modelo\Entities\Worm.cpp" />
+    <ClCompile Include="..\src\Servidor\modelo\Exceptions\ContourException.cpp" />
+    <ClCompile Include="..\src\Servidor\modelo\Exceptions\PlayerException.cpp" />
+    <ClCompile Include="..\src\Servidor\modelo\GameElement.cpp" />
+    <ClCompile Include="..\src\Servidor\modelo\GameEngine.cpp" />
+    <ClCompile Include="..\src\Servidor\modelo\GameLevel.cpp" />
+    <ClCompile Include="..\src\Servidor\modelo\GameLoop.cpp" />
+    <ClCompile Include="..\src\Servidor\modelo\GamePlayer.cpp" />
+    <ClCompile Include="..\src\Servidor\modelo\GamePosition.cpp" />
+    <ClCompile Include="..\src\Servidor\modelo\HandleContour.cpp" />
+    <ClCompile Include="..\src\Servidor\modelo\HandlerBmp\ColorBlack.cpp" />
+    <ClCompile Include="..\src\Servidor\modelo\HandlerBmp\ColorBmp.cpp" />
+    <ClCompile Include="..\src\Servidor\modelo\HandlerBmp\ColorRgb.cpp" />
+    <ClCompile Include="..\src\Servidor\modelo\HandlerBmp\ColorWhite.cpp" />
+    <ClCompile Include="..\src\Servidor\modelo\HandlerBmp\ContourBmp.cpp" />
+    <ClCompile Include="..\src\Servidor\modelo\HandlerBmp\DataBmp.cpp" />
+    <ClCompile Include="..\src\Servidor\modelo\HandlerBmp\DataBmp24.cpp" />
+    <ClCompile Include="..\src\Servidor\modelo\HandlerBmp\DataBmp32.cpp" />
+    <ClCompile Include="..\src\Servidor\modelo\HandlerBmp\DataImgSdl.cpp" />
+    <ClCompile Include="..\src\Servidor\modelo\HandlerBmp\PixelBmp.cpp" />
+    <ClCompile Include="..\src\Servidor\modelo\HandlerBmp\Position.cpp" />
+    <ClCompile Include="..\src\Servidor\modelo\HandlerBmp\TerrainImg.cpp" />
+    <ClCompile Include="..\src\Servidor\modelo\Physics\Bodies\Circle.cpp" />
+    <ClCompile Include="..\src\Servidor\modelo\Physics\Bodies\Cuadrado.cpp" />
+    <ClCompile Include="..\src\Servidor\modelo\Physics\Bodies\Hexagon.cpp" />
+    <ClCompile Include="..\src\Servidor\modelo\Physics\Bodies\Missiles\Missile2d.cpp" />
+    <ClCompile Include="..\src\Servidor\modelo\Physics\Bodies\Missiles\Missile2dBazooka.cpp" />
+    <ClCompile Include="..\src\Servidor\modelo\Physics\Bodies\Missiles\Missile2dFactory.cpp" />
+    <ClCompile Include="..\src\Servidor\modelo\Physics\Bodies\Missiles\Missile2dGrenade.cpp" />
+    <ClCompile Include="..\src\Servidor\modelo\Physics\Bodies\Missiles\MissileAirStrike2d.cpp" />
+    <ClCompile Include="..\src\Servidor\modelo\Physics\Bodies\Missiles\MissileBanana2d.cpp" />
+    <ClCompile Include="..\src\Servidor\modelo\Physics\Bodies\Missiles\MissileBurro2d.cpp" />
+    <ClCompile Include="..\src\Servidor\modelo\Physics\Bodies\Missiles\MissileDynamite2d.cpp" />
+    <ClCompile Include="..\src\Servidor\modelo\Physics\Bodies\Missiles\MissileHoly2d.cpp" />
+    <ClCompile Include="..\src\Servidor\modelo\Physics\Bodies\Missiles\MissileHoming2d.cpp" />
+    <ClCompile Include="..\src\Servidor\modelo\Physics\Bodies\Missiles\MissileSheep2d.cpp" />
+    <ClCompile Include="..\src\Servidor\modelo\Physics\Bodies\Pentagon.cpp" />
+    <ClCompile Include="..\src\Servidor\modelo\Physics\Bodies\Triangulo.cpp" />
+    <ClCompile Include="..\src\Servidor\modelo\Physics\Bodies\Water.cpp" />
+    <ClCompile Include="..\src\Servidor\modelo\Physics\Bodies\Worm\Worm2d.cpp" />
+    <ClCompile Include="..\src\Servidor\modelo\Physics\Bodies\Worm\WormActions.cpp" />
+    <ClCompile Include="..\src\Servidor\modelo\Physics\Body.cpp" />
+    <ClCompile Include="..\src\Servidor\modelo\Physics\ContactListener.cpp" />
+    <ClCompile Include="..\src\Servidor\modelo\TerrainProcessor.cpp" />
+    <ClCompile Include="..\src\Servidor\modelo\TurnManager.cpp" />
+    <ClCompile Include="..\src\Servidor\Servidor.cpp" />
+    <ClCompile Include="..\src\utils\Log.cpp" />
+    <ClCompile Include="..\src\utils\Network\Condition.cpp" />
+    <ClCompile Include="..\src\utils\Network\Mutex.cpp" />
+    <ClCompile Include="..\src\utils\Network\Socket.cpp" />
+    <ClCompile Include="..\src\utils\Network\Thread.cpp" />
+    <ClCompile Include="..\src\utils\ParserYaml.cpp" />
+    <ClCompile Include="..\src\utils\PersistYaml.cpp" />
+    <ClCompile Include="..\src\utils\Timer.cpp" />
+    <ClCompile Include="..\src\utils\Util.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\Servidor\modelo\b2Separator.h" />
+    <ClInclude Include="..\src\Servidor\modelo\Entities\Missile.h" />
+    <ClInclude Include="..\src\Servidor\modelo\Entities\MissileAirStrike.h" />
+    <ClInclude Include="..\src\Servidor\modelo\Entities\MissileBanana.h" />
+    <ClInclude Include="..\src\Servidor\modelo\Entities\MissileBazooka.h" />
+    <ClInclude Include="..\src\Servidor\modelo\Entities\MissileBurro.h" />
+    <ClInclude Include="..\src\Servidor\modelo\Entities\MissileDynamite.h" />
+    <ClInclude Include="..\src\Servidor\modelo\Entities\MissileFactory.h" />
+    <ClInclude Include="..\src\Servidor\modelo\Entities\MissileGrenade.h" />
+    <ClInclude Include="..\src\Servidor\modelo\Entities\MissileHoly.h" />
+    <ClInclude Include="..\src\Servidor\modelo\Entities\MissileHoming.h" />
+    <ClInclude Include="..\src\Servidor\modelo\Entities\MissileSheep.h" />
+    <ClInclude Include="..\src\Servidor\modelo\Entities\MissileSuicide.h" />
+    <ClInclude Include="..\src\Servidor\modelo\Entities\Worm.h" />
+    <ClInclude Include="..\src\Servidor\modelo\Exceptions\ContourException.h" />
+    <ClInclude Include="..\src\Servidor\modelo\Exceptions\PlayerException.h" />
+    <ClInclude Include="..\src\Servidor\modelo\GameElement.h" />
+    <ClInclude Include="..\src\Servidor\modelo\GameEngine.h" />
+    <ClInclude Include="..\src\Servidor\modelo\GameLevel.h" />
+    <ClInclude Include="..\src\Servidor\modelo\GameLoop.h" />
+    <ClInclude Include="..\src\Servidor\modelo\GamePlayer.h" />
+    <ClInclude Include="..\src\Servidor\modelo\GamePosition.h" />
+    <ClInclude Include="..\src\Servidor\modelo\HandleContour.h" />
+    <ClInclude Include="..\src\Servidor\modelo\HandlerBmp\ColorBlack.h" />
+    <ClInclude Include="..\src\Servidor\modelo\HandlerBmp\ColorBmp.h" />
+    <ClInclude Include="..\src\Servidor\modelo\HandlerBmp\ColorRgb.h" />
+    <ClInclude Include="..\src\Servidor\modelo\HandlerBmp\ColorWhite.h" />
+    <ClInclude Include="..\src\Servidor\modelo\HandlerBmp\ContourBmp.h" />
+    <ClInclude Include="..\src\Servidor\modelo\HandlerBmp\DataBmp.h" />
+    <ClInclude Include="..\src\Servidor\modelo\HandlerBmp\DataBmp24.h" />
+    <ClInclude Include="..\src\Servidor\modelo\HandlerBmp\DataBmp32.h" />
+    <ClInclude Include="..\src\Servidor\modelo\HandlerBmp\DataImgSdl.h" />
+    <ClInclude Include="..\src\Servidor\modelo\HandlerBmp\PixelBmp.h" />
+    <ClInclude Include="..\src\Servidor\modelo\HandlerBmp\Position.h" />
+    <ClInclude Include="..\src\Servidor\modelo\HandlerBmp\TerrainImg.h" />
+    <ClInclude Include="..\src\Servidor\modelo\Physics\Bodies\Circle.h" />
+    <ClInclude Include="..\src\Servidor\modelo\Physics\Bodies\Cuadrado.h" />
+    <ClInclude Include="..\src\Servidor\modelo\Physics\Bodies\Hexagon.h" />
+    <ClInclude Include="..\src\Servidor\modelo\Physics\Bodies\Missiles\Missile2d.h" />
+    <ClInclude Include="..\src\Servidor\modelo\Physics\Bodies\Missiles\Missile2dBazooka.h" />
+    <ClInclude Include="..\src\Servidor\modelo\Physics\Bodies\Missiles\Missile2dFactory.h" />
+    <ClInclude Include="..\src\Servidor\modelo\Physics\Bodies\Missiles\Missile2dGrenade.h" />
+    <ClInclude Include="..\src\Servidor\modelo\Physics\Bodies\Missiles\MissileAirStrike2d.h" />
+    <ClInclude Include="..\src\Servidor\modelo\Physics\Bodies\Missiles\MissileBanana2d.h" />
+    <ClInclude Include="..\src\Servidor\modelo\Physics\Bodies\Missiles\MissileBurro2d.h" />
+    <ClInclude Include="..\src\Servidor\modelo\Physics\Bodies\Missiles\MissileDynamite2d.h" />
+    <ClInclude Include="..\src\Servidor\modelo\Physics\Bodies\Missiles\MissileHoly2d.h" />
+    <ClInclude Include="..\src\Servidor\modelo\Physics\Bodies\Missiles\MissileHoming2d.h" />
+    <ClInclude Include="..\src\Servidor\modelo\Physics\Bodies\Missiles\MissileSheep2d.h" />
+    <ClInclude Include="..\src\Servidor\modelo\Physics\Bodies\Pentagon.h" />
+    <ClInclude Include="..\src\Servidor\modelo\Physics\Bodies\Triangulo.h" />
+    <ClInclude Include="..\src\Servidor\modelo\Physics\Bodies\Water.h" />
+    <ClInclude Include="..\src\Servidor\modelo\Physics\Bodies\Worm\Worm2d.h" />
+    <ClInclude Include="..\src\Servidor\modelo\Physics\Bodies\Worm\WormActions.h" />
+    <ClInclude Include="..\src\Servidor\modelo\Physics\Body.h" />
+    <ClInclude Include="..\src\Servidor\modelo\Physics\ContactListener.h" />
+    <ClInclude Include="..\src\Servidor\modelo\TerrainProcessor.h" />
+    <ClInclude Include="..\src\Servidor\modelo\TurnManager.h" />
+    <ClInclude Include="..\src\Servidor\Servidor.h" />
+    <ClInclude Include="..\src\utils\Constantes\Constantes.h" />
+    <ClInclude Include="..\src\utils\Log.h" />
+    <ClInclude Include="..\src\utils\Network\Condition.h" />
+    <ClInclude Include="..\src\utils\Network\Messages.h" />
+    <ClInclude Include="..\src\utils\Network\Mutex.h" />
+    <ClInclude Include="..\src\utils\Network\Socket.h" />
+    <ClInclude Include="..\src\utils\Network\Thread.h" />
+    <ClInclude Include="..\src\utils\ParserYaml.h" />
+    <ClInclude Include="..\src\utils\PersistYaml.h" />
+    <ClInclude Include="..\src\utils\Timer.h" />
+    <ClInclude Include="..\src\utils\Util.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="configFile.props" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

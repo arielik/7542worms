@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F1621443-81A2-4E79-9E1E-24C31DFD5122}</ProjectGuid>
+    <RootNamespace>randomgame</RootNamespace>
+    <ProjectName>randomgame-client</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>C:\random-fiuba-game\randomgame\src\utils\Network;C:\random-fiuba-game\randomgame\libs\SDL2_gfx\include;C:\random-fiuba-game\randomgame\libs\;C:\random-fiuba-game\randomgame\libs\Box2D\;C:\random-fiuba-game\randomgame\libs\yaml-cpp\include\yaml-cpp\contrib;C:\random-fiuba-game\randomgame\libs\yaml-cpp\include\yaml-cpp;C:\random-fiuba-game\randomgame\libs\yaml-cpp\include;C:\random-fiuba-game\randomgame\libs\SDL2-2.0.0\include;C:\random-fiuba-game\randomgame\libs\SDL2_ttf-2.0.12\include;C:\random-fiuba-game\randomgame\libs\SDL2_mixer-2.0.0\include;C:\random-fiuba-game\randomgame\libs\SDL2_image-2.0.0\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>C:\random-fiuba-game\randomgame\libs\SDL2_gfx\lib;C:\random-fiuba-game\randomgame\libs\Box2D;C:\random-fiuba-game\randomgame\libs\yaml-cpp\build\Debug;C:\random-fiuba-game\randomgame\libs\yaml-cpp\build;C:\random-fiuba-game\randomgame\libs\SDL2-2.0.0\lib\x86;C:\random-fiuba-game\randomgame\libs\SDL2_ttf-2.0.12\lib\x86;C:\random-fiuba-game\randomgame\libs\SDL2_mixer-2.0.0\lib\x86;C:\random-fiuba-game\randomgame\libs\SDL2_image-2.0.0\lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>C:\random-fiuba-game\randomgame\libs\SDL2_gfx\include;C:\random-fiuba-game\randomgame\libs\;C:\random-fiuba-game\randomgame\libs\Box2D\;C:\random-fiuba-game\randomgame\libs\yaml-cpp\include\yaml-cpp\contrib;C:\random-fiuba-game\randomgame\libs\yaml-cpp\include\yaml-cpp;C:\random-fiuba-game\randomgame\libs\yaml-cpp\include;C:\random-fiuba-game\randomgame\libs\SDL2-2.0.0\include;C:\random-fiuba-game\randomgame\libs\SDL2_ttf-2.0.12\include;C:\random-fiuba-game\randomgame\libs\SDL2_mixer-2.0.0\include;C:\random-fiuba-game\randomgame\libs\SDL2_image-2.0.0\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\random-fiuba-game\randomgame\libs\release;C:\random-fiuba-game\randomgame\libs\SDL2_gfx\lib;C:\random-fiuba-game\randomgame\libs\SDL2-2.0.0\lib\x86;C:\random-fiuba-game\randomgame\libs\SDL2_ttf-2.0.12\lib\x86;C:\random-fiuba-game\randomgame\libs\SDL2_mixer-2.0.0\lib\x86;C:\random-fiuba-game\randomgame\libs\SDL2_image-2.0.0\lib\x86;C:\random-fiuba-game\randomgame\libs\SDL2_mixer-2.0.0\include\SDL_mixer.h;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_mixer.lib;SDL2_ttf.lib;Box2D.lib;libyaml-cppmdd.lib;SDL2_gfx.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_mixer.lib;SDL2_ttf.lib;Box2D.lib;libyaml-cppmd.lib;SDL2_gfx.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\Cliente\controlador\Entity\Action.cpp" />
+    <ClCompile Include="..\src\Cliente\controlador\Entity\ActionEvent.cpp" />
+    <ClCompile Include="..\src\Cliente\controlador\Entity\Click.cpp" />
+    <ClCompile Include="..\src\Cliente\controlador\Entity\ClickEvent.cpp" />
+    <ClCompile Include="..\src\Cliente\controlador\Entity\CollectionEvent.cpp" />
+    <ClCompile Include="..\src\Cliente\controlador\Entity\Change.cpp" />
+    <ClCompile Include="..\src\Cliente\controlador\Entity\ChangeEvent.cpp" />
+    <ClCompile Include="..\src\Cliente\controlador\Entity\Move.cpp" />
+    <ClCompile Include="..\src\Cliente\controlador\Entity\MovementEvent.cpp" />
+    <ClCompile Include="..\src\Cliente\controlador\Entity\Over.cpp" />
+    <ClCompile Include="..\src\Cliente\controlador\Entity\PartialScreen.cpp" />
+    <ClCompile Include="..\src\Cliente\controlador\Entity\ScrollEvent.cpp" />
+    <ClCompile Include="..\src\Cliente\controlador\Entity\Shape.cpp" />
+    <ClCompile Include="..\src\Cliente\controlador\Entity\Zoom.cpp" />
+    <ClCompile Include="..\src\Cliente\controlador\Entity\ZoomEvent.cpp" />
+    <ClCompile Include="..\src\Cliente\controlador\RunGame.cpp" />
+    <ClCompile Include="..\src\Cliente\modelo\GameDomain.cpp" />
+    <ClCompile Include="..\src\Cliente\sonido\SoundManager.cpp" />
+    <ClCompile Include="..\src\Cliente\Updater.cpp" />
+    <ClCompile Include="..\src\Cliente\vista\AimView.cpp" />
+    <ClCompile Include="..\src\Cliente\vista\armas\AirStrikeView.cpp" />
+    <ClCompile Include="..\src\Cliente\vista\armas\BananaView.cpp" />
+    <ClCompile Include="..\src\Cliente\vista\armas\BazookaView.cpp" />
+    <ClCompile Include="..\src\Cliente\vista\armas\DonkeyView.cpp" />
+    <ClCompile Include="..\src\Cliente\vista\armas\DynamiteView.cpp" />
+    <ClCompile Include="..\src\Cliente\vista\armas\GrenadeView.cpp" />
+    <ClCompile Include="..\src\Cliente\vista\armas\HolyView.cpp" />
+    <ClCompile Include="..\src\Cliente\vista\armas\SheepView.cpp" />
+    <ClCompile Include="..\src\Cliente\vista\Camera.cpp" />
+    <ClCompile Include="..\src\Cliente\vista\EartView.cpp" />
+    <ClCompile Include="..\src\Cliente\vista\ExplosionView.cpp" />
+    <ClCompile Include="..\src\Cliente\vista\ExplosionViewGroup.cpp" />
+    <ClCompile Include="..\src\Cliente\vista\figuras\CircleView.cpp" />
+    <ClCompile Include="..\src\Cliente\vista\figuras\EllipseView.cpp" />
+    <ClCompile Include="..\src\Cliente\vista\figuras\HexagonView.cpp" />
+    <ClCompile Include="..\src\Cliente\vista\figuras\PentagonView.cpp" />
+    <ClCompile Include="..\src\Cliente\vista\figuras\PolygonView.cpp" />
+    <ClCompile Include="..\src\Cliente\vista\figuras\RectangleView.cpp" />
+    <ClCompile Include="..\src\Cliente\vista\figuras\TriangleView.cpp" />
+    <ClCompile Include="..\src\Cliente\vista\FigureViewGroup.cpp" />
+    <ClCompile Include="..\src\Cliente\vista\FontManager.cpp" />
+    <ClCompile Include="..\src\Cliente\vista\GameView.cpp" />
+    <ClCompile Include="..\src\Cliente\vista\GameViewBuilder.cpp" />
+    <ClCompile Include="..\src\Cliente\vista\MenuWeaponView.cpp" />
+    <ClCompile Include="..\src\Cliente\vista\PlayerProgressView.cpp" />
+    <ClCompile Include="..\src\Cliente\vista\PowerView.cpp" />
+    <ClCompile Include="..\src\Cliente\vista\ProjectileView.cpp" />
+    <ClCompile Include="..\src\Cliente\vista\Sprite.cpp" />
+    <ClCompile Include="..\src\Cliente\vista\SpriteConfigurator.cpp" />
+    <ClCompile Include="..\src\Cliente\vista\StateBarView.cpp" />
+    <ClCompile Include="..\src\Cliente\vista\TerrainView.cpp" />
+    <ClCompile Include="..\src\Cliente\vista\TextManager.cpp" />
+    <ClCompile Include="..\src\Cliente\vista\TextView.cpp" />
+    <ClCompile Include="..\src\Cliente\vista\TimerView.cpp" />
+    <ClCompile Include="..\src\Cliente\vista\WaitActivity.cpp" />
+    <ClCompile Include="..\src\Cliente\vista\WaitView.cpp" />
+    <ClCompile Include="..\src\Cliente\vista\WaterViewImg.cpp" />
+    <ClCompile Include="..\src\Cliente\vista\Weapon.cpp" />
+    <ClCompile Include="..\src\Cliente\vista\WormView.cpp" />
+    <ClCompile Include="..\src\Cliente\Cliente.cpp" />
+    <ClCompile Include="..\src\Cliente\controlador\GameController.cpp" />
+    <ClCompile Include="..\src\Cliente\vista\Activity.cpp" />
+    <ClCompile Include="..\src\Cliente\vista\Bootstrap.cpp" />
+    <ClCompile Include="..\src\Cliente\vista\FigureView.cpp" />
+    <ClCompile Include="..\src\Cliente\vista\GameActivity.cpp" />
+    <ClCompile Include="..\src\Cliente\vista\GameException.cpp" />
+    <ClCompile Include="..\src\Cliente\vista\SDLScreen.cpp" />
+    <ClCompile Include="..\src\Cliente\vista\SkyView.cpp" />
+    <ClCompile Include="..\src\Cliente\vista\TextureManager.cpp" />
+    <ClCompile Include="..\src\Cliente\vista\TScreen.cpp" />
+    <ClCompile Include="..\src\Cliente\vista\View.cpp" />
+    <ClCompile Include="..\src\Cliente\vista\ViewGroup.cpp" />
+    <ClCompile Include="..\src\Cliente\vista\ViewMock.cpp" />
+    <ClCompile Include="..\src\Cliente\vista\WaterView.cpp" />
+    <ClCompile Include="..\src\main-client.cpp" />
+    <ClCompile Include="..\src\Servidor\modelo\GameElement.cpp" />
+    <ClCompile Include="..\src\utils\Log.cpp" />
+    <ClCompile Include="..\src\utils\Network\Condition.cpp" />
+    <ClCompile Include="..\src\utils\Network\Mutex.cpp" />
+    <ClCompile Include="..\src\utils\Network\Socket.cpp" />
+    <ClCompile Include="..\src\utils\Network\Thread.cpp" />
+    <ClCompile Include="..\src\utils\ParserYaml.cpp" />
+    <ClCompile Include="..\src\utils\PersistYaml.cpp" />
+    <ClCompile Include="..\src\utils\Timer.cpp" />
+    <ClCompile Include="..\src\utils\Util.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\Cliente\controlador\Contracts\Notifiable.h" />
+    <ClInclude Include="..\src\Cliente\controlador\Contracts\OnActionListener.h" />
+    <ClInclude Include="..\src\Cliente\controlador\Contracts\OnClickListener.h" />
+    <ClInclude Include="..\src\Cliente\controlador\Contracts\OnChangeListener.h" />
+    <ClInclude Include="..\src\Cliente\controlador\Contracts\OnMovementListener.h" />
+    <ClInclude Include="..\src\Cliente\controlador\Contracts\OnScrollListener.h" />
+    <ClInclude Include="..\src\Cliente\controlador\Contracts\OnZoomListener.h" />
+    <ClInclude Include="..\src\Cliente\controlador\Entity\Action.h" />
+    <ClInclude Include="..\src\Cliente\controlador\Entity\ActionEvent.h" />
+    <ClInclude Include="..\src\Cliente\controlador\Entity\Click.h" />
+    <ClInclude Include="..\src\Cliente\controlador\Entity\ClickEvent.h" />
+    <ClInclude Include="..\src\Cliente\controlador\Entity\CollectionEvent.h" />
+    <ClInclude Include="..\src\Cliente\controlador\Entity\Change.h" />
+    <ClInclude Include="..\src\Cliente\controlador\Entity\ChangeEvent.h" />
+    <ClInclude Include="..\src\Cliente\controlador\Entity\Move.h" />
+    <ClInclude Include="..\src\Cliente\controlador\Entity\MovementEvent.h" />
+    <ClInclude Include="..\src\Cliente\controlador\Entity\Over.h" />
+    <ClInclude Include="..\src\Cliente\controlador\Entity\PartialScreen.h" />
+    <ClInclude Include="..\src\Cliente\controlador\Entity\ScrollEvent.h" />
+    <ClInclude Include="..\src\Cliente\controlador\Entity\Shape.h" />
+    <ClInclude Include="..\src\Cliente\controlador\Entity\Zoom.h" />
+    <ClInclude Include="..\src\Cliente\controlador\Entity\ZoomEvent.h" />
+    <ClInclude Include="..\src\Cliente\controlador\RunGame.h" />
+    <ClInclude Include="..\src\Cliente\modelo\GameDomain.h" />
+    <ClInclude Include="..\src\Cliente\sonido\SoundManager.h" />
+    <ClInclude Include="..\src\Cliente\Updater.h" />
+    <ClInclude Include="..\src\Cliente\vista\AimView.h" />
+    <ClInclude Include="..\src\Cliente\vista\armas\AirStrikeView.h" />
+    <ClInclude Include="..\src\Cliente\vista\armas\BananaView.h" />
+    <ClInclude Include="..\src\Cliente\vista\armas\BazookaView.h" />
+    <ClInclude Include="..\src\Cliente\vista\armas\DonkeyView.h" />
+    <ClInclude Include="..\src\Cliente\vista\armas\DynamiteView.h" />
+    <ClInclude Include="..\src\Cliente\vista\armas\GrenadeView.h" />
+    <ClInclude Include="..\src\Cliente\vista\armas\HolyView.h" />
+    <ClInclude Include="..\src\Cliente\vista\armas\SheepView.h" />
+    <ClInclude Include="..\src\Cliente\vista\Camera.h" />
+    <ClInclude Include="..\src\Cliente\vista\EartView.h" />
+    <ClInclude Include="..\src\Cliente\vista\ElemViewGroup.h" />
+    <ClInclude Include="..\src\Cliente\vista\ExplosionView.h" />
+    <ClInclude Include="..\src\Cliente\vista\ExplosionViewGroup.h" />
+    <ClInclude Include="..\src\Cliente\vista\figuras\CircleView.h" />
+    <ClInclude Include="..\src\Cliente\vista\figuras\EllipseView.h" />
+    <ClInclude Include="..\src\Cliente\vista\figuras\HexagonView.h" />
+    <ClInclude Include="..\src\Cliente\vista\figuras\PentagonView.h" />
+    <ClInclude Include="..\src\Cliente\vista\figuras\PolygonView.h" />
+    <ClInclude Include="..\src\Cliente\vista\figuras\RectangleView.h" />
+    <ClInclude Include="..\src\Cliente\vista\figuras\TriangleView.h" />
+    <ClInclude Include="..\src\Cliente\vista\FigureViewGroup.h" />
+    <ClInclude Include="..\src\Cliente\vista\FontManager.h" />
+    <ClInclude Include="..\src\Cliente\vista\GameView.h" />
+    <ClInclude Include="..\src\Cliente\vista\GameViewBuilder.h" />
+    <ClInclude Include="..\src\Cliente\vista\MenuWeaponView.h" />
+    <ClInclude Include="..\src\Cliente\vista\PlayerProgressView.h" />
+    <ClInclude Include="..\src\Cliente\vista\PowerView.h" />
+    <ClInclude Include="..\src\Cliente\vista\ProjectileView.h" />
+    <ClInclude Include="..\src\Cliente\vista\Sprite.h" />
+    <ClInclude Include="..\src\Cliente\vista\SpriteConfigurator.h" />
+    <ClInclude Include="..\src\Cliente\vista\StateBarView.h" />
+    <ClInclude Include="..\src\Cliente\vista\TerrainView.h" />
+    <ClInclude Include="..\src\Cliente\vista\TextManager.h" />
+    <ClInclude Include="..\src\Cliente\vista\TextView.h" />
+    <ClInclude Include="..\src\Cliente\vista\TimerView.h" />
+    <ClInclude Include="..\src\Cliente\vista\WaitActivity.h" />
+    <ClInclude Include="..\src\Cliente\vista\WaitView.h" />
+    <ClInclude Include="..\src\Cliente\vista\WaterViewImg.h" />
+    <ClInclude Include="..\src\Cliente\vista\Weapon.h" />
+    <ClInclude Include="..\src\Cliente\vista\WormView.h" />
+    <ClInclude Include="..\src\Cliente\Cliente.h" />
+    <ClInclude Include="..\src\Cliente\controlador\GameController.h" />
+    <ClInclude Include="..\src\Cliente\vista\Activity.h" />
+    <ClInclude Include="..\src\Cliente\vista\Bootstrap.h" />
+    <ClInclude Include="..\src\Cliente\vista\FigureView.h" />
+    <ClInclude Include="..\src\Cliente\vista\GameActivity.h" />
+    <ClInclude Include="..\src\Cliente\vista\GameException.h" />
+    <ClInclude Include="..\src\Cliente\vista\SDLScreen.h" />
+    <ClInclude Include="..\src\Cliente\vista\SkyView.h" />
+    <ClInclude Include="..\src\Cliente\vista\TextureManager.h" />
+    <ClInclude Include="..\src\Cliente\vista\TScreen.h" />
+    <ClInclude Include="..\src\Cliente\vista\View.h" />
+    <ClInclude Include="..\src\Cliente\vista\ViewGroup.h" />
+    <ClInclude Include="..\src\Cliente\vista\ViewMock.h" />
+    <ClInclude Include="..\src\Cliente\vista\WaterView.h" />
+    <ClInclude Include="..\src\Servidor\modelo\GameElement.h" />
+    <ClInclude Include="..\src\utils\Constantes\Colors.h" />
+    <ClInclude Include="..\src\utils\Constantes\Constantes.h" />
+    <ClInclude Include="..\src\utils\Log.h" />
+    <ClInclude Include="..\src\utils\Network\Condition.h" />
+    <ClInclude Include="..\src\utils\Network\Messages.h" />
+    <ClInclude Include="..\src\utils\Network\Mutex.h" />
+    <ClInclude Include="..\src\utils\Network\Socket.h" />
+    <ClInclude Include="..\src\utils\Network\Thread.h" />
+    <ClInclude Include="..\src\utils\ParserYaml.h" />
+    <ClInclude Include="..\src\utils\PersistYaml.h" />
+    <ClInclude Include="..\src\utils\Timer.h" />
+    <ClInclude Include="..\src\utils\Util.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

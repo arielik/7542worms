@@ -1,0 +1,609 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Archivos de código fuente">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Archivos de encabezado">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Archivos de recursos">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Archivos de código fuente\client">
+      <UniqueIdentifier>{b45e5372-084a-4cd7-b805-8216f15f8cfe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de código fuente\client\view">
+      <UniqueIdentifier>{db8a11af-9a98-48a6-a017-b1ef56333670}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de código fuente\client\controller">
+      <UniqueIdentifier>{7da69bcb-4e43-4f7f-b1eb-d39fb91c2bc8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de código fuente\client\controller\Contracts">
+      <UniqueIdentifier>{f8fff63e-7a16-4846-9008-7ddce9ee3c5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de código fuente\client\controller\Entity">
+      <UniqueIdentifier>{3a5d01fe-d467-4a6e-9ca5-f7a800901fcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de código fuente\utils">
+      <UniqueIdentifier>{0df01e72-0355-4f96-abe4-27aae518cf87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de código fuente\utils\Constantes">
+      <UniqueIdentifier>{0597958a-d7d3-4df0-98bb-ba060131e7aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de código fuente\utils\Log">
+      <UniqueIdentifier>{bb6c2f9b-c084-4e5a-ada9-a1829065c1e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de código fuente\utils\Network">
+      <UniqueIdentifier>{0eecca7e-7fd6-4cc5-b9cf-7de5a29951b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de código fuente\server">
+      <UniqueIdentifier>{a6891cf5-56ba-4c8a-ad8e-95a473849b75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de código fuente\server\model">
+      <UniqueIdentifier>{0e9a491f-4aa6-42cb-8c87-6862896fec2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de código fuente\client\sound">
+      <UniqueIdentifier>{d6b6eae0-f07b-4147-a6f9-9720ad5c015d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de código fuente\client\view\weapon">
+      <UniqueIdentifier>{ab0e2020-0d91-4006-9eca-f73e8e3f69d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de código fuente\client\view\figures">
+      <UniqueIdentifier>{98835fc2-007a-4195-8ae8-1ca90333078c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\Cliente\Cliente.cpp">
+      <Filter>Archivos de código fuente\client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\controlador\GameController.cpp">
+      <Filter>Archivos de código fuente\client\controller</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\vista\ViewMock.cpp">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\vista\Activity.cpp">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\vista\Bootstrap.cpp">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\vista\FigureView.cpp">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\vista\GameActivity.cpp">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\vista\GameException.cpp">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\vista\SDLScreen.cpp">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\vista\SkyView.cpp">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\vista\TextureManager.cpp">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\vista\TScreen.cpp">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\vista\View.cpp">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\vista\ViewGroup.cpp">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\vista\WaterView.cpp">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\vista\TerrainView.cpp">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\vista\GameViewBuilder.cpp">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\vista\FigureViewGroup.cpp">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\controlador\RunGame.cpp">
+      <Filter>Archivos de código fuente\client\controller</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\controlador\Entity\MovementEvent.cpp">
+      <Filter>Archivos de código fuente\client\controller\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\controlador\Entity\ScrollEvent.cpp">
+      <Filter>Archivos de código fuente\client\controller\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\controlador\Entity\ZoomEvent.cpp">
+      <Filter>Archivos de código fuente\client\controller\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\controlador\Entity\ClickEvent.cpp">
+      <Filter>Archivos de código fuente\client\controller\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\vista\SpriteConfigurator.cpp">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\vista\Sprite.cpp">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\vista\WormView.cpp">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\controlador\Entity\PartialScreen.cpp">
+      <Filter>Archivos de código fuente\client\controller\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\vista\EartView.cpp">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\vista\Camera.cpp">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\controlador\Entity\Over.cpp">
+      <Filter>Archivos de código fuente\client\controller\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\controlador\Entity\Click.cpp">
+      <Filter>Archivos de código fuente\client\controller\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\controlador\Entity\Zoom.cpp">
+      <Filter>Archivos de código fuente\client\controller\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\controlador\Entity\Move.cpp">
+      <Filter>Archivos de código fuente\client\controller\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\controlador\Entity\CollectionEvent.cpp">
+      <Filter>Archivos de código fuente\client\controller\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\vista\GameView.cpp">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\utils\Log.cpp">
+      <Filter>Archivos de código fuente\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\utils\ParserYaml.cpp">
+      <Filter>Archivos de código fuente\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\utils\PersistYaml.cpp">
+      <Filter>Archivos de código fuente\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\utils\Util.cpp">
+      <Filter>Archivos de código fuente\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\utils\Network\Condition.cpp">
+      <Filter>Archivos de código fuente\utils\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\utils\Network\Mutex.cpp">
+      <Filter>Archivos de código fuente\utils\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\utils\Network\Socket.cpp">
+      <Filter>Archivos de código fuente\utils\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\utils\Network\Thread.cpp">
+      <Filter>Archivos de código fuente\utils\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\main-client.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Servidor\modelo\GameElement.cpp">
+      <Filter>Archivos de código fuente\server\model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\modelo\GameDomain.cpp">
+      <Filter>Archivos de código fuente\server\model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\vista\StateBarView.cpp">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\vista\TextView.cpp">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\vista\FontManager.cpp">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\Updater.cpp">
+      <Filter>Archivos de código fuente\client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\sonido\SoundManager.cpp">
+      <Filter>Archivos de código fuente\client\sound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\vista\MenuWeaponView.cpp">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\vista\WaitActivity.cpp">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\vista\WaitView.cpp">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\vista\MenuWeaponView.cpp">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\vista\TextManager.cpp">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\controlador\Entity\ActionEvent.cpp">
+      <Filter>Archivos de código fuente\client\controller\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\controlador\Entity\Action.cpp">
+      <Filter>Archivos de código fuente\client\controller\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\vista\Weapon.cpp">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\vista\ProjectileView.cpp">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\controlador\Entity\Shape.cpp">
+      <Filter>Archivos de código fuente\client\controller\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\utils\Timer.cpp">
+      <Filter>Archivos de código fuente\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\vista\AimView.cpp">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\vista\armas\GrenadeView.cpp">
+      <Filter>Archivos de código fuente\client\view\weapon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\vista\armas\HolyView.cpp">
+      <Filter>Archivos de código fuente\client\view\weapon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\vista\armas\BazookaView.cpp">
+      <Filter>Archivos de código fuente\client\view\weapon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\vista\armas\DynamiteView.cpp">
+      <Filter>Archivos de código fuente\client\view\weapon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\vista\armas\DonkeyView.cpp">
+      <Filter>Archivos de código fuente\client\view\weapon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\vista\armas\AirStrikeView.cpp">
+      <Filter>Archivos de código fuente\client\view\weapon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\vista\figuras\CircleView.cpp">
+      <Filter>Archivos de código fuente\client\view\figures</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\vista\figuras\EllipseView.cpp">
+      <Filter>Archivos de código fuente\client\view\figures</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\vista\figuras\HexagonView.cpp">
+      <Filter>Archivos de código fuente\client\view\figures</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\vista\figuras\PentagonView.cpp">
+      <Filter>Archivos de código fuente\client\view\figures</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\vista\figuras\PolygonView.cpp">
+      <Filter>Archivos de código fuente\client\view\figures</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\vista\figuras\RectangleView.cpp">
+      <Filter>Archivos de código fuente\client\view\figures</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\vista\figuras\TriangleView.cpp">
+      <Filter>Archivos de código fuente\client\view\figures</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\controlador\Entity\ChangeEvent.cpp">
+      <Filter>Archivos de código fuente\client\controller\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\controlador\Entity\Change.cpp">
+      <Filter>Archivos de código fuente\client\controller\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\vista\WaterViewImg.cpp">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\vista\PlayerProgressView.cpp">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\vista\PowerView.cpp">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\vista\TimerView.cpp">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\vista\armas\BananaView.cpp">
+      <Filter>Archivos de código fuente\client\view\weapon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\vista\armas\SheepView.cpp">
+      <Filter>Archivos de código fuente\client\view\weapon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\vista\ExplosionView.cpp">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Cliente\vista\ExplosionViewGroup.cpp">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\Cliente\Cliente.h">
+      <Filter>Archivos de código fuente\client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\controlador\GameController.h">
+      <Filter>Archivos de código fuente\client\controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\vista\ViewMock.h">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\vista\Activity.h">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\vista\Bootstrap.h">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\vista\FigureView.h">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\vista\GameActivity.h">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\vista\GameException.h">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\vista\SDLScreen.h">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\vista\SkyView.h">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\vista\TextureManager.h">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\vista\TScreen.h">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\vista\View.h">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\vista\ViewGroup.h">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\vista\WaterView.h">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\vista\TerrainView.h">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\vista\GameViewBuilder.h">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\vista\FigureViewGroup.h">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\controlador\RunGame.h">
+      <Filter>Archivos de código fuente\client\controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\controlador\Entity\MovementEvent.h">
+      <Filter>Archivos de código fuente\client\controller\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\controlador\Entity\ScrollEvent.h">
+      <Filter>Archivos de código fuente\client\controller\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\controlador\Entity\ZoomEvent.h">
+      <Filter>Archivos de código fuente\client\controller\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\controlador\Entity\ClickEvent.h">
+      <Filter>Archivos de código fuente\client\controller\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\controlador\Contracts\OnClickListener.h">
+      <Filter>Archivos de código fuente\client\controller\Contracts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\controlador\Contracts\OnMovementListener.h">
+      <Filter>Archivos de código fuente\client\controller\Contracts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\controlador\Contracts\OnScrollListener.h">
+      <Filter>Archivos de código fuente\client\controller\Contracts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\controlador\Contracts\OnZoomListener.h">
+      <Filter>Archivos de código fuente\client\controller\Contracts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\vista\Sprite.h">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\vista\WormView.h">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\vista\SpriteConfigurator.h">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\controlador\Entity\PartialScreen.h">
+      <Filter>Archivos de código fuente\client\controller\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\vista\EartView.h">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\vista\Camera.h">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\controlador\Entity\Over.h">
+      <Filter>Archivos de código fuente\client\controller\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\controlador\Contracts\Notifiable.h">
+      <Filter>Archivos de código fuente\client\controller\Contracts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\controlador\Entity\Click.h">
+      <Filter>Archivos de código fuente\client\controller\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\controlador\Entity\Zoom.h">
+      <Filter>Archivos de código fuente\client\controller\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\controlador\Entity\Move.h">
+      <Filter>Archivos de código fuente\client\controller\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\controlador\Entity\CollectionEvent.h">
+      <Filter>Archivos de código fuente\client\controller\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\vista\GameView.h">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\utils\Log.h">
+      <Filter>Archivos de código fuente\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\utils\ParserYaml.h">
+      <Filter>Archivos de código fuente\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\utils\PersistYaml.h">
+      <Filter>Archivos de código fuente\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\utils\Util.h">
+      <Filter>Archivos de código fuente\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\utils\Constantes\Constantes.h">
+      <Filter>Archivos de código fuente\utils\Constantes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\utils\Network\Condition.h">
+      <Filter>Archivos de código fuente\utils\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\utils\Network\Messages.h">
+      <Filter>Archivos de código fuente\utils\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\utils\Network\Mutex.h">
+      <Filter>Archivos de código fuente\utils\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\utils\Network\Socket.h">
+      <Filter>Archivos de código fuente\utils\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\utils\Network\Thread.h">
+      <Filter>Archivos de código fuente\utils\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Servidor\modelo\GameElement.h">
+      <Filter>Archivos de código fuente\server\model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\modelo\GameDomain.h">
+      <Filter>Archivos de código fuente\server\model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\vista\StateBarView.h">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\vista\TextView.h">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\vista\FontManager.h">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\Updater.h">
+      <Filter>Archivos de código fuente\client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\sonido\SoundManager.h">
+      <Filter>Archivos de código fuente\client\sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\vista\MenuWeaponView.h">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\vista\WaitActivity.h">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\vista\WaitView.h">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\vista\MenuWeaponView.h">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\vista\TextManager.h">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\controlador\Contracts\OnActionListener.h">
+      <Filter>Archivos de código fuente\client\controller\Contracts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\controlador\Entity\ActionEvent.h">
+      <Filter>Archivos de código fuente\client\controller\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\controlador\Entity\Action.h">
+      <Filter>Archivos de código fuente\client\controller\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\vista\Weapon.h">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\vista\ProjectileView.h">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\vista\ElemViewGroup.h">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\controlador\Entity\Shape.h">
+      <Filter>Archivos de código fuente\client\controller\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\utils\Timer.h">
+      <Filter>Archivos de código fuente\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\vista\AimView.h">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\vista\armas\GrenadeView.h">
+      <Filter>Archivos de código fuente\client\view\weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\vista\armas\HolyView.h">
+      <Filter>Archivos de código fuente\client\view\weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\vista\armas\BazookaView.h">
+      <Filter>Archivos de código fuente\client\view\weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\vista\armas\DynamiteView.h">
+      <Filter>Archivos de código fuente\client\view\weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\vista\armas\DonkeyView.h">
+      <Filter>Archivos de código fuente\client\view\weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\vista\armas\AirStrikeView.h">
+      <Filter>Archivos de código fuente\client\view\weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\vista\figuras\CircleView.h">
+      <Filter>Archivos de código fuente\client\view\figures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\vista\figuras\EllipseView.h">
+      <Filter>Archivos de código fuente\client\view\figures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\vista\figuras\HexagonView.h">
+      <Filter>Archivos de código fuente\client\view\figures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\vista\figuras\PentagonView.h">
+      <Filter>Archivos de código fuente\client\view\figures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\vista\figuras\PolygonView.h">
+      <Filter>Archivos de código fuente\client\view\figures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\vista\figuras\RectangleView.h">
+      <Filter>Archivos de código fuente\client\view\figures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\vista\figuras\TriangleView.h">
+      <Filter>Archivos de código fuente\client\view\figures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\controlador\Contracts\OnChangeListener.h">
+      <Filter>Archivos de código fuente\client\controller\Contracts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\controlador\Entity\ChangeEvent.h">
+      <Filter>Archivos de código fuente\client\controller\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\controlador\Entity\Change.h">
+      <Filter>Archivos de código fuente\client\controller\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\vista\WaterViewImg.h">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\vista\PlayerProgressView.h">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\utils\Constantes\Colors.h">
+      <Filter>Archivos de código fuente\utils\Constantes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\vista\PowerView.h">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\vista\TimerView.h">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\vista\armas\BananaView.h">
+      <Filter>Archivos de código fuente\client\view\weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\vista\armas\SheepView.h">
+      <Filter>Archivos de código fuente\client\view\weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\vista\ExplosionView.h">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Cliente\vista\ExplosionViewGroup.h">
+      <Filter>Archivos de código fuente\client\view</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
